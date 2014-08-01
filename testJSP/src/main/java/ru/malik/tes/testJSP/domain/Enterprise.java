@@ -1,6 +1,9 @@
 package ru.malik.tes.testJSP.domain;
 
+import javax.validation.constraints.Size;
+
 public class Enterprise {
+	@Size(min=2, max=30) 
 	private String name;
 	private String code;
 	private FormOfIncorporation formOfIncorporation;
